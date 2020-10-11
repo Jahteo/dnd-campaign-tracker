@@ -4,25 +4,15 @@ import Layout from "./components/Layout/Layout";
 import Home from "../scenes/Home/Home";
 import NotFound from "../scenes/NotFound/NotFound";
 
-function One() {
-  return (
-    <>one</>
-  );
-}
-function Two() {
-  return (
-    <>two</>
-  );
-}
-function Three() {
-  return (
-    <>three</>
-  );
-}
+const navigation = [
+  { route: "/one", title: "Who we are" },
+  { route: "/two", title: "What we do" },
+  { route: "/three", title: "Get in touch" },
+];
 
 function App() {
   return (
-    <Layout>
+    <Layout navigation={navigation}>
       <Switch>
         <Route exact path="/">
           <Home />
@@ -45,3 +35,19 @@ function App() {
 }
 
 export default App;
+
+function One() {
+  return (
+    <>one</>
+  );
+}
+function Two() {
+  return (
+    <>two</>
+  );
+}
+function Three() {
+  return (
+    <>three</>
+  );
+}

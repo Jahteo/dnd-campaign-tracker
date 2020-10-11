@@ -3,7 +3,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./sass/main.scss";
 
-function Layout({ children }) {
+function Layout({ children, navigation }) {
   const sidebar = true;
   return (
     <div>
@@ -16,9 +16,9 @@ function Layout({ children }) {
                 <nav>
                   <ul>
                     <li><NavLink exact to="/">Welcome</NavLink></li>
-                    <li><NavLink to="/one">Who we are</NavLink></li>
-                    <li><NavLink to="/two">What we do</NavLink></li>
-                    <li><NavLink to="/three">Get in touch</NavLink></li>
+                    {navigation.map(({ route, title }) => (
+                      <li><NavLink to={route}>{title}</NavLink></li>
+                    ))}
                   </ul>
                 </nav>
               </div>
@@ -30,9 +30,9 @@ function Layout({ children }) {
               <Link to="/" className="title">Hyperspace</Link>
               <nav>
                 <ul>
-                  <li><NavLink to="/one">Who we are</NavLink></li>
-                  <li><NavLink to="/two">What we do</NavLink></li>
-                  <li><NavLink to="/three">Get in touch</NavLink></li>
+                  {navigation.map(({ route, title }) => (
+                    <li><NavLink to={route}>{title}</NavLink></li>
+                  ))}
                 </ul>
               </nav>
             </header>
@@ -58,6 +58,10 @@ function Layout({ children }) {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  navigation: PropTypes.arrayOf(PropTypes.shape({
+    route: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+  })).isRequired,
 };
 
 export default Layout;
