@@ -1,3 +1,9 @@
+This is my first baby. That project that's all my own and something I plan on using in my own life. My wireframes are at https://whimsical.com/dnd-tracker-VBBA4csJHwBKRuqGkh15yN for now, though when they're finished, I'll pull screenshots over to here instead.
+
+Many, many thanks to my mentor, the incredible ChistopherBaker, for constantly pushing me to write my own app, even if it's not the novelest of ideas. This wouldn't have happened or been nearly as amazing without you.
+
+Website theme from HTML5UP - Hyperspace
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -26,7 +32,7 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
+<!--
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
@@ -65,4 +71,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 ### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify -->
