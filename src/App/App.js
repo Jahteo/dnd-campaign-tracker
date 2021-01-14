@@ -2,12 +2,14 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Home from "../scenes/Home/Home";
+import Characters from "../scenes/Characters/Characters";
 import NotFound from "../scenes/NotFound/NotFound";
 
 const navigation = [
-  { route: "/one", title: "Who we are" },
-  { route: "/two", title: "What we do" },
-  { route: "/three", title: "Get in touch" },
+  { route: "/timeline", title: "Timeline" },
+  { route: "/pcs", title: "Player Characters" },
+  { route: "/npcs", title: "Non-Player Characters" },
+  { route: "/locations", title: "Locations" },
 ];
 
 function App() {
@@ -17,14 +19,17 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/one">
-          <One />
+        <Route path="/timeline">
+          <Timeline />
         </Route>
-        <Route path="/two">
-          <Two />
+        <Route path="/pcs">
+          <Characters />
         </Route>
-        <Route path="/three">
-          <Three />
+        <Route path="/npcs">
+          <NPCs />
+        </Route>
+        <Route path="/locations">
+          <Locations />
         </Route>
         <Route>
           <NotFound />
@@ -36,18 +41,18 @@ function App() {
 
 export default App;
 
-function One() {
+function Timeline() {
   return (
-    <>one</>
+    <>timeline</>
   );
 }
-function Two() {
+function NPCs() {
   return (
-    <>two</>
+    <>npcs</>
   );
 }
-function Three() {
+function Locations() {
   return (
-    <>three</>
+    <>locations</>
   );
 }
