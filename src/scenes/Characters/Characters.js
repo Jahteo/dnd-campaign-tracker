@@ -4,6 +4,8 @@ import Page from "../../shared/components/Page/Page";
 const pcDetails = [
   { name: "Snips", player: "Airiel", race: "Lizardfolk??", class: "", hp: "", ac: "", level: "" },
   { name: "Kaidok", player: "Kyle", race: "", class: "", hp: "", ac: "", level: "" },
+  { name: "Kaidok", player: "Kyle", race: "", class: "", hp: "", ac: "", level: "" },
+  { name: "Kaidok", player: "Kyle", race: "", class: "", hp: "", ac: "", level: "" },
 ];
 
 function Characters() {
